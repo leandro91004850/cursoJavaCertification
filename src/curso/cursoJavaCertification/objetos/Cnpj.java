@@ -30,4 +30,8 @@ public class Cnpj {
 	public void setValor(String novoValor) {
 		this.valor = novoValor;
 	}
+	
+	public String toString() {
+		return this.valor;
+	}
 }

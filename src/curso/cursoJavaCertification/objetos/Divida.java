@@ -26,8 +26,13 @@ public class Divida {
 		this.credor = credor;
 	}
 
-	public Pagamentos getPagamentos() {
-		return pagamentos;
+	public void registra(Pagamento pagamento) {
+		pagamentos.registra(pagamento);
+		
+	}
+
+	public double getValorPago() {
+		return pagamentos.getValorPago();
 	}
 	
 
