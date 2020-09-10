@@ -1,11 +1,28 @@
 package curso.cursoJavaCertification.objetos;
 
-public class Cnpj {
+public class Cnpj implements Documento {
 	private String valor;
+	
+	public Cnpj(String valor) {
+		this.valor = valor;
+	}
 	
 	public boolean ehValidado() {
 		return primeiroDigitoVerificador() == primeiroDigitoCorreto()
 				&& segundoDigitoVerificador() == segundoDigitoCorreto();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Cnpj)) {
+			return false;
+		}
+		Cnpj outro = (Cnpj) obj;
+		return this.valor.equals(outro.valor);
+	}
+	
+	public int hashCode() {
+		return this.valor.hashCode();
 	}
 	
 	private int segundoDigitoCorreto() {
@@ -33,5 +50,11 @@ public class Cnpj {
 	
 	public String toString() {
 		return this.valor;
+	}
+
+	@Override
+	public boolean ehValido() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

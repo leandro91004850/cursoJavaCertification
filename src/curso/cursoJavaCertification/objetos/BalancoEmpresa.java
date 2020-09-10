@@ -3,25 +3,20 @@ package curso.cursoJavaCertification.objetos;
 import java.util.HashMap;
 
 public class BalancoEmpresa {
-	private HashMap<String, Divida> dividas = new HashMap<String, Divida>();
-	public void registroDivida(String credor, String cnpjCredor, double valor) {
-		Divida divida = new Divida();
-		divida.setCredor(credor);
-		divida.setTotal(valor);
-		divida.getCnpjCredor().setValor(cnpjCredor);
-		dividas.put(cnpjCredor, divida);
+	private final HashMap<Documento, Divida> dividas = new HashMap<Documento, Divida>();
+
+	public void registroDivida(Divida divida) {
+			dividas.put(divida.getDocumentoCredor(), divida);
+	
 	}
 	
-	public void pagaDivida(String cnpjCredor, double valor, String nomePagador, String cnpjPagador) {
-		Divida divida = dividas.get(cnpjCredor);
+	public void pagaDivida(Documento documentoCredor, Pagamento pagamento) {
+		Divida divida = dividas.get(documentoCredor);
 		if(divida != null) {
-			Pagamento pagamento = new Pagamento();// criando estancia de pagamamento
-			pagamento.setCnpjPagador(cnpjPagador);
-			pagamento.setPagador(nomePagador);
-			pagamento.setValor(valor);
 			divida.registra(pagamento);
 			
 		}
 	}
+
 	
 }
