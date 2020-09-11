@@ -1,4 +1,4 @@
-package curso.cursoJavaCertification.objetos;
+package curso.cursoJavaCertification.balancoEmpresa;
 
 public class Cnpj implements Documento {
 	private String valor;

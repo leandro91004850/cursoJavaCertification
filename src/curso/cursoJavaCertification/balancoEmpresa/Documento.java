@@ -1,4 +1,4 @@
-package curso.cursoJavaCertification.objetos;
+package curso.cursoJavaCertification.balancoEmpresa;
 
 public interface Documento {
 	boolean ehValido();

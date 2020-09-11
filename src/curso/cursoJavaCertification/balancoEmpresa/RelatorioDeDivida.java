@@ -1,4 +1,4 @@
-package curso.cursoJavaCertification.objetos;
+package curso.cursoJavaCertification.balancoEmpresa;
 
 import java.text.NumberFormat;
 import java.util.Locale;

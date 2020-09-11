@@ -1,4 +1,4 @@
-package curso.cursoJavaCertification.objetos;
+package curso.cursoJavaCertification.balancoEmpresa;
 
 //\\Desktop-uj5tant\arquivados\Alura\3.LINGUAGEM JAVA\8. Cursos adicionais Java\2. curso de orientação a Objeto - melhores técnicas com Java\VIDEOS
 public class Divida {
