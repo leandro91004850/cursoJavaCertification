@@ -1,7 +1,6 @@
 package curso.cursoJavaCertification.balancoEmpresa;
 
 import java.text.NumberFormat;
-import java.util.Locale;
 
 public class RelatorioDeDivida {
 	private final Divida divida;

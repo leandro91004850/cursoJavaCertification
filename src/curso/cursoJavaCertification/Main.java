@@ -7,6 +7,7 @@ import curso.cursoJavaCertification.balancoEmpresa.Cpf;
 import curso.cursoJavaCertification.balancoEmpresa.Divida;
 import curso.cursoJavaCertification.balancoEmpresa.Pagamento;
 import curso.cursoJavaCertification.balancoEmpresa.Pagamentos;
+import curso.cursoJavaCertification.operadores.Operadores;
 
 public class Main {
 	public static void main(String[] args){
@@ -39,6 +40,10 @@ public class Main {
 		Pagamentos pagamentos = new Pagamentos();
 		Pagamento pagamento1 = new Pagamento();
 		Pagamento pagamento2 = new Pagamento();
+		Operadores operadores = new Operadores();
+
+		//operadores.operacoesIncremento();
+		operadores.OperadoresDecrementoIncremento();
 		pagamento1.setValor(105);
 		pagamento2.setValor(252);
 		
