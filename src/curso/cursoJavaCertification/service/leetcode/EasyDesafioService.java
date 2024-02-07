@@ -7,8 +7,8 @@ public class EasyDesafioService {
             //Dado um string word, encontre o primeiro caractere não repetido nele e retorne seu índice. Se não existir, retorne -1.
             HashMap<Character, Integer> mp = new HashMap<>();
 
-            for (char a : word.toCharArray()) {
-                mp.put(a, mp.getOrDefault(a, 0) + 1);
+            for (char letra : word.toCharArray()) {
+                mp.put(letra, mp.getOrDefault(letra, 0) + 1);
             }
 
             for (int i = 0; i < word.length(); i++) {
