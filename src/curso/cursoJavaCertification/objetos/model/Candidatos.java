@@ -5,6 +5,16 @@ public class Candidatos {
     private int votos;
     private int identificador;
 
+    public Candidatos(String nome, int votos, int identificador) {
+        this.nome = nome;
+        this.votos = votos;
+        this.identificador = identificador;
+    }
+
+    public Candidatos() { // usado para instanciar um objeto exemplo: Candidatos candidato = new Candidatos();
+
+    }
+
     public String getNome() {
         return nome;
     }
@@ -31,10 +41,10 @@ public class Candidatos {
 
     @Override
     public String toString() {
-        return "Candidatos{" +
-                "nome='" + nome + '\'' +
-                ", votos=" + votos +
-                ", identificador=" + identificador +
-                '}';
+        return "{\n" +
+                "    \"nome\": \""+nome+"\",\n"+
+                "    \"votos\": "+votos+",\n"+
+                "    \"identificador\": "+identificador+"\n"+
+                "}";
     }
 }
