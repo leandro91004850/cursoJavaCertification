@@ -59,10 +59,9 @@ public class TestRibeiroPretoService {
 
 
         for(int i = test.size() - 1; i >= 0; i--){
-            String palavraAleartoria = montarPalavraInvertida + test.get(i);
-            montarPalavraInvertida = palavraAleartoria;
+            montarPalavraInvertida = montarPalavraInvertida + test.get(i);
         }
-
+        System.out.println("Palavra invertida: " + montarPalavraInvertida);
         return montarPalavraInvertida;
     }
 
