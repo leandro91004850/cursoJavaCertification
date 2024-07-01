@@ -7,62 +7,62 @@ import java.util.Random;
 
 public class EasyDesafioService {
 
-        public static int firstUniqChar(String word) {
-            //Dado um string word, encontre o primeiro caractere não repetido nele e retorne seu índice. Se não existir, retorne -1.
-            HashMap<Character, Integer> mp = new HashMap<>();
+    public static int firstUniqChar(String word) {
+        //Dado um string word, encontre o primeiro caractere não repetido nele e retorne seu índice. Se não existir, retorne -1.
+        HashMap<Character, Integer> mp = new HashMap<>();
 
-            for (char letra : word.toCharArray()) {
-                mp.put(letra, mp.getOrDefault(letra, 0) + 1);
-            }
-
-            for (int i = 0; i < word.length(); i++) {
-                if (mp.get(word.charAt(i)) == 1) {
-                    return i;
-                }
-            }
-
-            return -1;
+        for (char letra : word.toCharArray()) {
+            mp.put(letra, mp.getOrDefault(letra, 0) + 1);
         }
 
-        public static void saidaTesteMaisMais() {
-            int value = 10;
-            int a = ++value;
-            int b = value;
-            int c = value++;
-
-            if (a <= b && a >= c) {
-                if (b <= c) {
-                    a = ++b;
-                } else {
-                    a = ++c;
-                }
-            }
-            System.out.println(a);
-        }
-
-        public static int verificarTrueFalse() {
-           boolean  value1 = 10 + 5 >= 2 + 13;
-           int value2 = 0;
-           if(value1 ==  true){
-               value2 = 5 * 3 + 10 / 2;
-           } else {
-               value2 = 5 / 3 + 10 * 2;
-           }
-           return value2;
-        }
-
-        public static String saidaArrayString(){
-            String flavors[] =  {"vanilla", "chocalate"};
-            int choice = 2;
-            switch (choice) {
-                case 1:
-                    return "select" + flavors[1] + "flavor";
-                case 2:
-                    return "select" + flavors[2] + "flavor";
-                default:
-                    return flavors[0];
+        for (int i = 0; i < word.length(); i++) {
+            if (mp.get(word.charAt(i)) == 1) {
+                return i;
             }
         }
+
+        return -1;
+    }
+
+    public static void saidaTesteMaisMais() {
+        int value = 10;
+        int a = ++value;
+        int b = value;
+        int c = value++;
+
+        if (a <= b && a >= c) {
+            if (b <= c) {
+                a = ++b;
+            } else {
+                a = ++c;
+            }
+        }
+        System.out.println(a);
+    }
+
+    public static int verificarTrueFalse() {
+       boolean  value1 = 10 + 5 >= 2 + 13;
+       int value2 = 0;
+       if(value1 ==  true){
+           value2 = 5 * 3 + 10 / 2;
+       } else {
+           value2 = 5 / 3 + 10 * 2;
+       }
+       return value2;
+    }
+
+    public static String saidaArrayString(){
+        String flavors[] =  {"vanilla", "chocalate"};
+        int choice = 2;
+        switch (choice) {
+            case 1:
+                return "select" + flavors[1] + "flavor";
+            case 2:
+                return "select" + flavors[2] + "flavor";
+            default:
+                return flavors[0];
+        }
+    }
 
     public static void saidaDivision(){
         int [] arr = {10, 0};
@@ -140,5 +140,12 @@ public class EasyDesafioService {
             System.out.println(names.isEmpty());
     }
 
+    public static void sensitiveCase(){
+        String inputFromConsole = " betaTeste ";
+        String cleanInput;
+        cleanInput = inputFromConsole.toUpperCase();
+        cleanInput = cleanInput.trim();
+        System.out.println("["+ cleanInput + "]");
+    }
 
 }

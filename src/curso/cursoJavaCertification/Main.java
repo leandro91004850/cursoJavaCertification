@@ -33,8 +33,8 @@ public class Main {
 		//EasyDesafioService.doWhile();
 		//EasyDesafioService.adicionandoRemovendoList();
 		//EasyDesafioService.testandoSaidaRuntimeException();
-		EasyDesafioService.testesComRemoveClear();
-
+		//EasyDesafioService.testesComRemoveClear();
+		EasyDesafioService.sensitiveCase();
 
 
 	
