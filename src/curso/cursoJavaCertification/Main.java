@@ -32,7 +32,9 @@ public class Main {
 		//EasyDesafioService.verificarTrueFalseString();
 		//EasyDesafioService.doWhile();
 		//EasyDesafioService.adicionandoRemovendoList();
-		EasyDesafioService.testandoSaidaRuntimeException();
+		//EasyDesafioService.testandoSaidaRuntimeException();
+		EasyDesafioService.testesComRemoveClear();
+
 
 
 	

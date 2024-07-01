@@ -127,5 +127,18 @@ public class EasyDesafioService {
             System.out.println(number);
     }
 
+    public static void testesComRemoveClear(){
+            List<String> names = new ArrayList<>();
+            names.add("Robb");
+            names.add("Bran");
+            names.remove(0);
+            names.remove(0);
+            System.out.println(names.isEmpty());
+            names.add("Rickon");
+            names.add("Bran");
+            names.clear();
+            System.out.println(names.isEmpty());
+    }
+
 
 }
