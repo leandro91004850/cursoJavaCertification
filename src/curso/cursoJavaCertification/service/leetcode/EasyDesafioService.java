@@ -1,6 +1,7 @@
 package curso.cursoJavaCertification.service.leetcode;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class EasyDesafioService {
 
@@ -36,6 +37,53 @@ public class EasyDesafioService {
             }
             System.out.println(a);
         }
+
+        public static int verificarTrueFalse() {
+           boolean  value1 = 10 + 5 >= 2 + 13;
+           int value2 = 0;
+           if(value1 ==  true){
+               value2 = 5 * 3 + 10 / 2;
+           } else {
+               value2 = 5 / 3 + 10 * 2;
+           }
+           return value2;
+        }
+
+        public static String saidaArrayString(){
+            String flavors[] =  {"vanilla", "chocalate"};
+            int choice = 2;
+            switch (choice) {
+                case 1:
+                    return "select" + flavors[1] + "flavor";
+                case 2:
+                    return "select" + flavors[2] + "flavor";
+                default:
+                    return flavors[0];
+            }
+        }
+
+    public static void saidaDivision(){
+        int [] arr = {10, 0};
+        int i = 0;
+        try{
+            int answer = arr[i] / arr[i + 1];
+        } catch (ArithmeticException ae){
+            System.out.println("valid divisor.");
+        } catch (Exception e) {
+            System.out.println("Arithmetic exception");
+        }
+    }
+
+    public static void testRandom(){
+        Random r1 = new Random(10);
+        Random r2 = new Random(10); // line n1
+
+        if(r1.nextInt() == r2.nextInt()){
+            System.out.println("true " + r1.nextInt() + " " + r2.nextInt());
+        } else {
+            System.out.println("false " + r1.nextInt() + " " + r2.nextInt());
+        }
+    }
 
 
 }

@@ -24,7 +24,12 @@ public class Main {
 		//TestRibeiroPretoService.fibonacci();
 		//TestRibeiroPretoService.invertString("teste");
 		//System.out.println(args.length);
-		EasyDesafioService.saidaTesteMaisMais();
+		//EasyDesafioService.saidaTesteMaisMais();
+		//System.out.println(EasyDesafioService.verificarTrueFalse());
+		//System.out.println(EasyDesafioService.saidaArrayString());
+		//EasyDesafioService.saidaDivision();
+		EasyDesafioService.testRandom();
+
 
 	
 }
