@@ -1,6 +1,8 @@
 package curso.cursoJavaCertification.service.leetcode;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
 
 public class EasyDesafioService {
@@ -83,6 +85,33 @@ public class EasyDesafioService {
         } else {
             System.out.println("false " + r1.nextInt() + " " + r2.nextInt());
         }
+    }
+
+    public static void verificarTrueFalseString(){
+            String a = "Java";
+            String b = new String("Java");
+            System.out.println(a.equals(b));
+            System.out.println(a == b);
+    }
+
+    public static void doWhile(){
+        int num = 100;
+        int count = 0;
+        do {
+            num--;
+            count++;
+        } while (count > 1);
+        System.out.println("num= "+ num);
+    }
+
+    public static void adicionandoRemovendoList(){
+            List<String> list = new ArrayList<>();
+            list.add("A");
+            list.add("B");
+            list.add("C");
+            list.remove(2);
+            list.set(3, "D");
+            System.out.println(list);
     }
 
 

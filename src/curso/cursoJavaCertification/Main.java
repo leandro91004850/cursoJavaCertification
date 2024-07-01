@@ -28,7 +28,10 @@ public class Main {
 		//System.out.println(EasyDesafioService.verificarTrueFalse());
 		//System.out.println(EasyDesafioService.saidaArrayString());
 		//EasyDesafioService.saidaDivision();
-		EasyDesafioService.testRandom();
+		///EasyDesafioService.testRandom();
+		//EasyDesafioService.verificarTrueFalseString();
+		//EasyDesafioService.doWhile();
+		EasyDesafioService.adicionandoRemovendoList();
 
 
 	
