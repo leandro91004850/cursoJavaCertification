@@ -31,7 +31,8 @@ public class Main {
 		///EasyDesafioService.testRandom();
 		//EasyDesafioService.verificarTrueFalseString();
 		//EasyDesafioService.doWhile();
-		EasyDesafioService.adicionandoRemovendoList();
+		//EasyDesafioService.adicionandoRemovendoList();
+		EasyDesafioService.testandoSaidaRuntimeException();
 
 
 	

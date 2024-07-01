@@ -114,5 +114,18 @@ public class EasyDesafioService {
             System.out.println(list);
     }
 
+    public static void testandoSaidaRuntimeException(){
+            int number = 1;
+            String s = null;
+            try {
+                number = s.length();
+                number += 2;
+            } catch (RuntimeException e){
+                number += 4;
+            }
+
+            System.out.println(number);
+    }
+
 
 }
