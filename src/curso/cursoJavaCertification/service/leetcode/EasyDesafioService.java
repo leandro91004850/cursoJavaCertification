@@ -51,6 +51,13 @@ public class EasyDesafioService {
        return value2;
     }
 
+    public static void testeTrueAndFalse(){
+        boolean b1 =  10 == 10 &&  ! (5 != 5); // true && false = false
+        boolean b2 = 10 < 8 || 10 > 2; // false || true = true or true || false = true
+
+        System.out.println(b1 + "\n" + b2);
+    }
+
     public static String saidaArrayString(){
         String flavors[] =  {"vanilla", "chocalate"};
         int choice = 2;
@@ -163,5 +170,6 @@ public class EasyDesafioService {
         */
 
     }
+
 
 }
