@@ -1,9 +1,7 @@
 package curso.cursoJavaCertification;
 import curso.cursoJavaCertification.service.leetcode.EasyDesafioService;
 
-import java.util.*;
-
-public class Main {
+class Testes {
 
 	//private ClasseControle classeControle;
 	private EasyDesafioService easyDesafioService;
