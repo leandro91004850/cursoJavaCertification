@@ -34,7 +34,8 @@ public class Main {
 		//EasyDesafioService.adicionandoRemovendoList();
 		//EasyDesafioService.testandoSaidaRuntimeException();
 		//EasyDesafioService.testesComRemoveClear();
-		EasyDesafioService.sensitiveCase();
+		//EasyDesafioService.sensitiveCase();
+		EasyDesafioService.testeCompateTo();
 
 
 	

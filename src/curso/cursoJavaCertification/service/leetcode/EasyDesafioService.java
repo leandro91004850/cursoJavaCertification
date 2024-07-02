@@ -148,4 +148,20 @@ public class EasyDesafioService {
         System.out.println("["+ cleanInput + "]");
     }
 
+    public static void testeCompateTo(){
+
+        String str1 = "foo-bars";
+        String str2 = new String ("foo-bar");
+        System.out.println(str1.equals(str2) + " ");
+        System.out.println(str1 == str2);
+        System.out.println(" " + str1.compareTo (str2));
+
+        /* Se result for:
+            Menor que 0: str1 é menor que str2.
+            Igual a 0: str1 é igual a str2.
+            Maior que 0: str1 é maior que str2.
+        */
+
+    }
+
 }
