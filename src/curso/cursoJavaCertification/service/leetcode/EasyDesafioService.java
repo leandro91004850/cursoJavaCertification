@@ -57,6 +57,16 @@ public class EasyDesafioService {
         System.out.println(b1 + "\n" + b2);
     }
 
+    public static void testeTrueAndFalseTwo() {
+        int a = 10;
+        int b = 20;
+        int c = 30;
+        System.out.println(a++ > 10 || ++b <= 21);
+        System.out.println(a > 10 && ++b <= 22);
+        System.out.println(a <= 11 && b == 22);
+        System.out.println(c++ == 31 && a++ == 11 || b++ == 22);
+    }
+
     public static String saidaArrayString(){
         String flavors[] =  {"vanilla", "chocalate"};
         int choice = 2;
@@ -197,5 +207,7 @@ public class EasyDesafioService {
             }
         }
     }
+
+
 
 }
