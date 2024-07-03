@@ -185,4 +185,17 @@ public class EasyDesafioService {
         System.out.println(list);
     }
 
+    public static void testeFor(){
+        String [] flowers = {"lotus", "lily", "rose", "jasmine"};
+        for (String c : flowers){
+            if(c.length() < 4){ // quando a palavra for menor que 4 caracteres, ele pula para a próxima palavra
+                continue;
+            }
+            System.out.println(c + " ");
+            if(c.length() ==4){
+                break;
+            }
+        }
+    }
+
 }

@@ -37,7 +37,8 @@ class Testes {
 		//EasyDesafioService.testeCompateTo();
 		//EasyDesafioService.testeTrueAndFalse();
 		//EasyDesafioService.testStringAndChar();
-		EasyDesafioService.testeArrayList();
+		//EasyDesafioService.testeArrayList();
+		EasyDesafioService.testeFor();
 
 
 	
