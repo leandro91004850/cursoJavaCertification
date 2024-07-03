@@ -5,7 +5,8 @@ class Testes {
 
 	//private ClasseControle classeControle;
 	private EasyDesafioService easyDesafioService;
-	//private EstruturaDadoService estruturaDadoService;
+
+    //private EstruturaDadoService estruturaDadoService;
 	//private TestRibeiroPretoService testRibeiroPretoService;
 	public static void main(String[] args){
 		//BancoDeDados bd = new BancoDeDados("localhost", "usuario", "1234");
@@ -34,7 +35,9 @@ class Testes {
 		//EasyDesafioService.testesComRemoveClear();
 		//EasyDesafioService.sensitiveCase();
 		//EasyDesafioService.testeCompateTo();
-		EasyDesafioService.testeTrueAndFalse();
+		//EasyDesafioService.testeTrueAndFalse();
+		//EasyDesafioService.testStringAndChar();
+		EasyDesafioService.testeArrayList();
 
 
 	

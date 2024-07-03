@@ -51,13 +51,16 @@ public class EstruturaDadoService {
 
     public static List<Candidatos> vereadores(){
         List<Candidatos> vereador = List.of(
-          new Candidatos("Joao", 200, 1),
-          new Candidatos("Maria", 300, 2),
-          new Candidatos("Jose", 400, 3),
-          new Candidatos("Ana", 500, 4),
-          new Candidatos("Pedro", 600, 5),
-          new Candidatos("Leandro", 500, 2),
-          new Candidatos("Ana", 300, 3)
+          new Candidatos("Joao", 100, 1, 'M'),
+            new Candidatos("Maria", 200, 2, 'F'),
+            new Candidatos("Jose", 150, 3, 'M'),
+            new Candidatos("Ana", 300, 4, 'F'),
+            new Candidatos("Pedro", 250, 5, 'M'),
+            new Candidatos("Paula", 350, 6, 'F'),
+            new Candidatos("Carlos", 400, 7, 'M'),
+            new Candidatos("Julia", 500, 8, 'F'),
+            new Candidatos("Marcos", 450, 9, 'M'),
+            new Candidatos("Lucia", 550, 10, 'F')
         );
 
         return vereador;

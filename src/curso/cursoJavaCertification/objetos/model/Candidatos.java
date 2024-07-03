@@ -2,13 +2,15 @@ package curso.cursoJavaCertification.objetos.model;
 
 public class Candidatos {
     private String nome;
+    private char sexo;
     private int votos;
     private int identificador;
 
-    public Candidatos(String nome, int votos, int identificador) {
+    public Candidatos(String nome, int votos, int identificador, char sexo) {
         this.nome = nome;
         this.votos = votos;
         this.identificador = identificador;
+        this.sexo = sexo;
     }
 
     public Candidatos() { // usado para instanciar um objeto exemplo: Candidatos candidato = new Candidatos();
@@ -39,10 +41,19 @@ public class Candidatos {
         this.identificador = identificador;
     }
 
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
     @Override
     public String toString() {
         return "{\n" +
                 "    \"nome\": \""+nome+"\",\n"+
+                "    \"sexo\": \""+sexo+"\",\n"+
                 "    \"votos\": "+votos+",\n"+
                 "    \"identificador\": "+identificador+"\n"+
                 "}";

@@ -1,9 +1,8 @@
 package curso.cursoJavaCertification.service.leetcode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
+import curso.cursoJavaCertification.objetos.model.Candidatos;
+
+import java.util.*;
 
 public class EasyDesafioService {
 
@@ -156,7 +155,6 @@ public class EasyDesafioService {
     }
 
     public static void testeCompateTo(){
-
         String str1 = "foo-bars";
         String str2 = new String ("foo-bar");
         System.out.println(str1.equals(str2) + " ");
@@ -171,5 +169,20 @@ public class EasyDesafioService {
 
     }
 
+    public static void testStringAndChar(){
+        Candidatos candidato = new Candidatos();
+        System.out.println("[ "+ candidato.getNome() + ":"  + candidato.getSexo() + "]");
+    }
+
+    public static void testeArrayList(){
+        int []num = new int[3];
+        num[1] = 10;
+        num[2] = 15;
+        List<Integer> list = new ArrayList<>(3);
+        list.add(10);
+        list.add(15);
+        System.out.println(num);
+        System.out.println(list);
+    }
 
 }
