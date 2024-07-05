@@ -208,6 +208,12 @@ public class EasyDesafioService {
         }
     }
 
+    public static void testeString(){
+        String s = "Hello java";
+        System.out.println(s.length());
+        s.concat(" SE 8");
+        System.out.println(s.length());
+    }
 
 
 }

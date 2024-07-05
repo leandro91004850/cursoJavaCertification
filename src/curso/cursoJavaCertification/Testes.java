@@ -39,7 +39,8 @@ class Testes {
 		//EasyDesafioService.testStringAndChar();
 		//EasyDesafioService.testeArrayList();
 		//EasyDesafioService.testeFor();
-		EasyDesafioService.testeTrueAndFalseTwo();
+		//EasyDesafioService.testeTrueAndFalseTwo();
+		EasyDesafioService.testeString();
 
 
 	
