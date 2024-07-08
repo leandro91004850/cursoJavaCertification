@@ -1,10 +1,12 @@
 package curso.cursoJavaCertification;
 import curso.cursoJavaCertification.service.leetcode.EasyDesafioService;
+import curso.cursoJavaCertification.service.leetcode.OCFACertification1Z0811Service;
 
 class Testes {
 
 	//private ClasseControle classeControle;
 	private EasyDesafioService easyDesafioService;
+	private OCFACertification1Z0811Service oCFACertification1Z0811Service;
 
     //private EstruturaDadoService estruturaDadoService;
 	//private TestRibeiroPretoService testRibeiroPretoService;
@@ -40,8 +42,9 @@ class Testes {
 		//EasyDesafioService.testeArrayList();
 		//EasyDesafioService.testeFor();
 		//EasyDesafioService.testeTrueAndFalseTwo();
-		EasyDesafioService.testeString();
-
+		//EasyDesafioService.testeString();
+		//EasyDesafioService.testeClassParametros();
+		OCFACertification1Z0811Service.somador();
 
 	
 }

@@ -1,6 +1,7 @@
 package curso.cursoJavaCertification.service.leetcode;
 
 import curso.cursoJavaCertification.objetos.model.Candidatos;
+import curso.cursoJavaCertification.objetos.model.Product;
 
 import java.util.*;
 
@@ -215,5 +216,13 @@ public class EasyDesafioService {
         System.out.println(s.length());
     }
 
+    public static void testeClassParametros(){
+        Product prt = new Product();
+        prt.setPrice(200);
+        double newPrice = 100;
+
+        prt.update(prt, newPrice);
+        System.out.println(prt.getPrice() + " : " + newPrice);
+    }
 
 }
