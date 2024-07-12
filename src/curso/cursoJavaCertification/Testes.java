@@ -7,12 +7,15 @@ class Testes {
 	private EasyDesafioService easyDesafioService;
 	private OCFACertification1Z0811Service oCFACertification1Z0811Service;
 
+	static boolean a;
+	static boolean b;
+	static boolean c;
+
 	public static void main(String[] args){
 		OCFACertification1Z0811Service.somador();
 
-		int result1 = 2-(3+4);
-		int result2 = 2-3+4;
-		System.out.println(result1 + " \n" + result2);
+		boolean bool = (a = true) || (b = true) && (c = true);
+		System.out.println(a + ", " + b + ", " + c);
 
 
 }
