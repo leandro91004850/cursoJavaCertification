@@ -10,10 +10,11 @@ class Testes {
 	public static void main(String[] args){
 		OCFACertification1Z0811Service.somador();
 
-		int a = 2;
-		int b = 5;
-		int c = a * (a++ - --b) * a + b;
-		System.out.println(a+" " + b + " " + c);
+		String teste = "teste";
+		teste += 1;
+		System.out.println(teste);
+
+
 }
 
 }
