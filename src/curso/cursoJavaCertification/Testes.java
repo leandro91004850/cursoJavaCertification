@@ -9,7 +9,7 @@ class Testes {
 	private OCFACertification1Z0811Service oCFACertification1Z0811Service;
 
 	public static void main(String[] args){
-
+		int i = args.length;
 		int a = 1, b = 2;
 
 		boolean flag = a == b ? true : false;
