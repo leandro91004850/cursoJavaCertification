@@ -9,11 +9,9 @@ class Testes {
 	private OCFACertification1Z0811Service oCFACertification1Z0811Service;
 
 	public static void main(String[] args){
-		int i = args.length;
-		int a = 1, b = 2;
+		int i = 4;
 
-		boolean flag = a == b ? true : false;
-		System.out.println(flag);
+		while(i --> 0) System.out.println("i = " + i);
 }
 
 }
