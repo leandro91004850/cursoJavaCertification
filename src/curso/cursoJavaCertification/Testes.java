@@ -10,15 +10,10 @@ class Testes {
 
 	public static void main(String[] args){
 
-		boolean sweet = false;
-		int calories = sweet ? 200 : 100; // sweet contem true, logo calories = 200
-		boolean sweetflag = (calories == 100 ? true : false);
+		int a = 1, b = 2;
 
-		boolean hardcode = false;
-
-		String value = sweetflag ? "Sweetend" : "Unsweetend";
-		Object obj = sweetflag ? "Sweetend" : new Object();
-
+		boolean flag = a == b ? true : false;
+		System.out.println(flag);
 }
 
 }
