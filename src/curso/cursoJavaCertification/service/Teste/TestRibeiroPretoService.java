@@ -65,6 +65,16 @@ public class TestRibeiroPretoService {
         return montarPalavraInvertida;
     }
 
+    public static void reserve_order(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite um numero para ordena-lo de forma reversa: ");
+        int numero = input.nextInt();
+
+        for(int i = numero; i > 0; i--){
+            System.out.println("Numero: " + i);
+        }
+    }
+
 
 
 }
