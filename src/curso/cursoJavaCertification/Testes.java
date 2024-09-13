@@ -10,9 +10,8 @@ class Testes {
 	private TestRibeiroPretoService testRibeiroPretoService;
 
 	public static void main(String[] args){
-		//int i = 4;
-		//while(i --> 0) System.out.println("i = " + i);
-		TestRibeiroPretoService.reserve_order();
+
+		OCFACertification1Z0811Service.intefaceImplementsClass();
 	}
 
 }
