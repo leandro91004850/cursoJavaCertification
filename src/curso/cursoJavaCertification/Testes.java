@@ -11,7 +11,8 @@ class Testes {
 
 	public static void main(String[] args){
 
-		OCFACertification1Z0811Service.intefaceImplementsClass();
+		//OCFACertification1Z0811Service.intefaceImplementsClass();
+		OCFACertification1Z0811Service.variaveisPrimarias();
 	}
 
 }
